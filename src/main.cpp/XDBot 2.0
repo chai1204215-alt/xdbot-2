@@ -1,0 +1,10 @@
+#include <Geode/Geode.hpp>
+#include <Geode/modify/MenuLayer.hpp>
+using namespace geode::prelude;
+class $modify(MenuLayer) {
+  bool init() {
+    if (!MenuLayer::init()) return false;
+FLAlertLayer::create("Привет!", "XDBot 2.0 скоро будет здесь!", "ОК")->show();
+    return true;
+    }
+};
